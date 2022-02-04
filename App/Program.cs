@@ -58,9 +58,12 @@ public static class Program
                 config.AddEnvironmentVariables();
                 config.AddCommandLine(args);
             })
-            .ConfigureLogging((_, loggingBuilder) =>
+            .ConfigureLogging((hostingContext, loggingBuilder) =>
             {
+                loggingBuilder.ClearProviders();
+                loggingBuilder.AddConsoleLogger();
                 loggingBuilder.AddNonGenericLogger();
+                loggingBuilder.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
             })
             .ConfigureServices((hostingContext, services) =>
             {
