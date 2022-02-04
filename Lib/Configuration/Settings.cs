@@ -2,7 +2,7 @@
 
 public class Settings
 {
-    public string ApiVersion { get; set; } = "api-version=5.0-preview.1";
+    public string ApiVersion { get; set; } = "api-version=6.0";
 
     public string? ProjectName { get; set; }
 
