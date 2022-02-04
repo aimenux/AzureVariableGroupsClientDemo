@@ -1,3 +1,5 @@
+[![.NET](https://github.com/aimenux/AzureVariableGroupsClientDemo/actions/workflows/ci.yml/badge.svg)](https://github.com/aimenux/AzureVariableGroupsClientDemo/actions/workflows/ci.yml)
+
 # AzureVariableGroupsClientDemo
 ```
 Using various ways in order to get info about azure variable groups
